@@ -55,9 +55,6 @@
 
 #let setup(
   footer: none,
-  text-font: "Fira Sans",
-  math-font: "Fira Math",
-  code-font: "Fira Code",
   text-size: 23pt,
   body,
 ) = {
@@ -69,16 +66,11 @@
     header: slide-title-header,
   )
   set text(
-    font: text-font,
     // weight: "light", // looks nice but does not match Fira Math
     size: text-size,
     fill: rgb("#23373b"), // dark teal
   )
-  set strong(delta: 100)
-  show math.equation: set text(font: math-font)
-  show raw: set text(font: code-font)
   set align(horizon)
-  show emph: it => text(fill: bright, it.body)
   show heading.where(level: 1): _ => none
 
   body

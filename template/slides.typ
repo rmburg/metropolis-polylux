@@ -1,8 +1,16 @@
 #import "@preview/polylux:0.4.0": *
 #import "@preview/metropolis-polylux:0.1.0" as metropolis
-#import metropolis: new-section, focus
+#import metropolis: new-section, focus, bright
 
 #show: metropolis.setup
+
+#set strong(delta: 100)
+#set text(font: "Fira Sans")
+#show math.equation: set text(font: "Fira Math")
+#show raw: set text(font: "Fira Mono")
+
+// Set emphasized text to be bright orange
+#show emph: it => text(fill: bright, it.body)
 
 #slide[
   #set page(header: none, footer: none, margin: 3em)

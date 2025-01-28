@@ -23,9 +23,6 @@ At the top of the gnerated `slides.typ`, you will find the line
 which you can edit to configure the template with the following options:
 ```typ
 #show: metropolis.setup.with(
-  text-font: "Fira Sans",
-  math-font: "Fira Math",
-  code-font: "Fira Code",
   text-size: 23pt,
   footer: [My cool footer], // defaults to none
 )
