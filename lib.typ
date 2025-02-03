@@ -26,7 +26,7 @@
   enum(tight: false, ..sections)
 })
 
-#let progress-bar = toolbox.progress-ratio( ratio => {
+#let progress-bar = toolbox.progress-ratio(ratio => {
   set grid.cell(inset: (y: .03em))
   grid(
     columns: (ratio * 100%, 1fr),

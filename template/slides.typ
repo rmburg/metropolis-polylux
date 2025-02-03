@@ -7,7 +7,7 @@
 #slide[
   #set page(header: none, footer: none, margin: 3em)
 
- 
+
   #text(size: 1.3em)[
     *My presentation title*
   ]
@@ -15,7 +15,7 @@
   My subtitle
 
   #metropolis.divider
-  
+
   #set text(size: .8em, weight: "light")
   The Author
 
